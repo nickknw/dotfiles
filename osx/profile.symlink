@@ -29,8 +29,6 @@ export BUILD_ENV_SET=true
 export JBOSS_HOME=/opt/gls/ri/jboss-4.2.3.GA
 export JBOSS_DEPLOY=$JBOSS_HOME/server/default/deploy
 
-alias gvim=mvim
-alias c='pbcopy'
 alias isisdb='echo -ne "\033];isis db\007"; psql -U proteo -d objectTestDB; echo -ne "\033];Default\007"'
 alias isistestdb='echo -ne "\033];isis test db\007"; psql -U proteo -d autoTestDB; echo -ne "\033];Default\007"'
 alias sassgo='cd ~/development/isis/activity-management-ui/sass/; echo -ne "\033];compass\007"; compass watch -e production; echo -ne "\033];Default\007"; cd -'
@@ -41,6 +39,6 @@ alias riserver='/opt/gls/ri/jboss-4.2.3.GA/bin/run.sh -b 0.0.0.0'
 alias migrate_both='cd ~/development/isis; mvn clean install -Pmigrate -Ddatabase=autoTestDB; mvn clean install -Pmigrate -Ddatabase=objectTestDB'
 alias aistart='/opt/gls/ri/LIMSServerAI/current/bin/automatedinformatics.wrapper.sh start'
 
-source ~/.aws/nick.knowlson@genologics.com/setenv.sh
+#source ~/.aws/nick.knowlson@genologics.com/setenv.sh
 #source ~/development/ri/trunk/set-env.sh
 
