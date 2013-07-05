@@ -114,8 +114,21 @@ install_dotfiles () {
   done
 }
 
+create_vim_folders () {
+    if [ ! -d ~/.vimundo ]; then
+        mkdir ~/.vimundo
+    fi
+    if [ ! -d ~/.vimbackup ]; then
+        mkdir ~/.vimbackup
+    fi
+    if [ ! -d ~/.vimswap ]; then
+        mkdir ~/.vimswap
+    fi
+}
+
 setup_gitconfig
 install_dotfiles
+create_vim_folders
 
 # If we are on a mac, lets install and setup homebrew
 if [ "$(uname -s)" == "Darwin" ]

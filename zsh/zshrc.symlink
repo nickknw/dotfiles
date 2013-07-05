@@ -2,7 +2,7 @@
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+export PROJECTS=~/prog
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
@@ -13,16 +13,16 @@ fi
 
 # all of our zsh files
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=($ZSH/**/*.zshpiece)
 
 # load the path files
-for file in ${(M)config_files:#*/path.zsh}
+for file in ${(M)config_files:#*/path.zshpiece}
 do
   source $file
 done
 
 # load everything but the path and completion files
-for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
+for file in ${${config_files:#*/path.zshpiece}:#*/completion.zshpiece}
 do
   source $file
 done
@@ -32,7 +32,7 @@ autoload -U compinit
 compinit
 
 # load every completion after autocomplete loads
-for file in ${(M)config_files:#*/completion.zsh}
+for file in ${(M)config_files:#*/completion.zshpiece}
 do
   source $file
 done
