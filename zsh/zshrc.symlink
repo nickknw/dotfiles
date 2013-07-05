@@ -47,5 +47,8 @@ DISABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 plugins=(git rake rvm osx bundler brew autojump colored-man grails svn)
 source $ZSH/oh-my-zsh.sh
+unsetopt correct
+
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 export PATH=$PATH:/Users/nick.knowlson/.autojump/bin:/Users/nick.knowlson/.rvm/gems/ruby-1.9.3-p385/bin:/Users/nick.knowlson/.rvm/gems/ruby-1.9.3-p385@global/bin:/Users/nick.knowlson/.rvm/rubies/ruby-1.9.3-p385/bin:/Users/nick.knowlson/.rvm/bin:/Users/nick.knowlson/Library/Haskell/ghc-7.0.4/lib/hlint-1.8.33/bin/:/Users/nick.knowlson/Library/Haskell/ghc-7.0.4/lib/CCA-0.1.3/bin/:/Users/nick.knowlson/Library/Haskell/ghc-7.0.4/lib/darcs-2.8.1/bin/:/Users/nick.knowlson/bin/:'/Users/nick.knowlson/Applications/Racket v5.3/bin/':/usr/local/bin:/usr/local/Cellar/groovy/2.1.3/libexec:/opt/grails/grails-1.3.7/bin:/opt/maven/apache-maven-3.0.1/bin:/opt/ant/apache-ant-1.7.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/lib/swipl-5.11.32/bin/i386-darwin11.2.0/:/Users/nick.knowlson/.rvm/bin
