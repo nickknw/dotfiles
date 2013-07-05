@@ -10,8 +10,28 @@ if s:is_windows
     set runtimepath^=~/.vim
 endif
 
-" pathogen!
-call pathogen#runtime_append_all_bundles() 
+" vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+filetype off " required for vundle
+
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'vbundles/nerdtree'
+Bundle 'Align'
+Bundle 'matchit.zip'
+Bundle 'MRU'
+Bundle 'Rainbow-Parenthesis'
+Bundle 'tpope/vim-classpath'
+Bundle 'tpope/vim-foreplay'
+Bundle 'guns/vim-clojure-static'
+Bundle 'vimwiki'
+
+filetype plugin indent on " required for vundle
+
 
 " Get a good baseline {{{
 " --------------------------------
