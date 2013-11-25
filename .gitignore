@@ -2,3 +2,12 @@ sublime2/User/Package\ Control.sublime-settings
 sublime2/User/Package Control.last-run
 git/gitconfig.symlink
 zsh/localrc.symlink
+locals.zsh
+log/.zsh_history
+projects.zsh
+-custom/*
+-!custom/example
+-!custom/example.zsh
+*.swp
+!custom/example.zshcache
+cache/
