@@ -29,6 +29,7 @@ Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-foreplay'
 Bundle 'guns/vim-clojure-static'
 Bundle 'vimwiki'
+Bundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on " required for vundle
 
