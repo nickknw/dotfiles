@@ -53,3 +53,7 @@
 	renames = copies
 [push]
 	default = simple
+
+[user]
+        name = Nick Knowlson
+        email = nick@nickknowlson.com
