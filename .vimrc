@@ -11,33 +11,34 @@ if s:is_windows
 endif
 
 " vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set nocompatible " required for vundle, also much better default
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 filetype off " required for vundle
 
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle 'vbundles/nerdtree'
-Bundle 'Align'
-Bundle 'matchit.zip'
-Bundle 'mru.vim'
-Bundle 'Rainbow-Parenthesis'
-Bundle 'tpope/vim-classpath'
-Bundle 'tpope/vim-foreplay'
-Bundle 'guns/vim-clojure-static'
-Bundle 'vimwiki'
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Align'
+Plugin 'matchit.zip'
+Plugin 'mru.vim'
+Plugin 'Rainbow-Parenthesis'
+Plugin 'tpope/vim-classpath'
+Plugin 'tpope/vim-foreplay'
+Plugin 'guns/vim-clojure-static'
+Plugin 'vimwiki'
+Plugin 'kchmck/vim-coffee-script'
 
+call vundle#end()            " required for vundle
 filetype plugin indent on " required for vundle
 
 
 " Get a good baseline {{{
 " --------------------------------
 
-set nocompatible          " Use Vim defaults (much better!)
 set bs=2                  " allow backspacing over everything in insert mode
 set viminfo='20,\"50      " read/write a .viminfo file, don't store more than 50 lines of registers
 set history=50            " keep 50 lines of command line history
