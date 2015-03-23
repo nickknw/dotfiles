@@ -49,3 +49,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 mkdir -p .vimbackup
 mkdir -p .vimswap
+
+# For bundling lots of js files with browserify
+ulimit -n 2560
